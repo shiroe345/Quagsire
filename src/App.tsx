@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './Components/Layouts/Layout';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                {/* 登錄頁面 */}
+                <Route path="/login" element={<Layout page="login" />} />
+                
+                {/* 所有受保護的路由由 Layout 負責身份驗證 */}
+                <Route path="/dashboard" element={<Layout page="dashboard" />} />
+                <Route path="/" element={<Layout page="dashboard" />} />
+                <Route path="*" element={<Layout page="login" />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
