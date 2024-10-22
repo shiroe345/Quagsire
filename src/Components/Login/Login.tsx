@@ -3,6 +3,12 @@ import { Box, Button, Heading, Input, VStack, Modal, ModalOverlay, ModalContent,
 import { useNavigate } from 'react-router-dom';
 import { Cookies } from 'react-cookie';
 
+// 模擬的用戶資料庫
+const db: { [key: string]: string }  = {
+  'quagsire_aa': 'aa',
+  '123': '123'
+};
+
 const Login = () => {
   const navigate = useNavigate();
   const cookies = new Cookies();
@@ -20,7 +26,7 @@ const Login = () => {
   const handleLogin = () => {
     // 檢查是否有輸入 username 和 password
     if (username && password) {
-      if (username === 'admin' && password === 'admin') {
+      if (db.hasOwnProperty(username) && db[username] === password) {
         // 設置 Cookies 中的 username
         cookies.set('username', username, { path: '/'});
 
