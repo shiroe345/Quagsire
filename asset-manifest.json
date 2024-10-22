@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.e0ed3bec.js",
-    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.e0ed3bec.js.map": "/static/js/main.e0ed3bec.js.map",
-    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/Quagsire/static/css/main.e6c13ad2.css",
+    "main.js": "/Quagsire/static/js/main.aa08a6b5.js",
+    "static/js/453.ed3810f9.chunk.js": "/Quagsire/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/Quagsire/index.html",
+    "main.e6c13ad2.css.map": "/Quagsire/static/css/main.e6c13ad2.css.map",
+    "main.aa08a6b5.js.map": "/Quagsire/static/js/main.aa08a6b5.js.map",
+    "453.ed3810f9.chunk.js.map": "/Quagsire/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.e0ed3bec.js"
+    "static/js/main.aa08a6b5.js"
   ]
 }
