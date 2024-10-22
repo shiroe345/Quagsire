@@ -1,7 +1,7 @@
 import { extendTheme, ThemeConfig } from '@chakra-ui/react';
 
 const config: ThemeConfig = {
-  initialColorMode: 'dark',
+  initialColorMode: 'light',
   useSystemColorMode: false,
 };
 
@@ -10,8 +10,10 @@ const theme = extendTheme({
   colors: {
     brand: {
       100: '#f7c5c5',
-      900: '#1a202c',
+      900: '#1439ad',
+      200: 'red',
     },
+    logout: 'red',
   },
 });
 
