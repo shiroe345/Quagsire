@@ -62,7 +62,7 @@ const Dashboard = () => {
         </Button>
 
         <Button
-          bg="logout"
+          colorScheme="red"
           onClick={handleLogout}
           style={{ position: 'fixed', top: '10px', right: '10px' }}
         >
